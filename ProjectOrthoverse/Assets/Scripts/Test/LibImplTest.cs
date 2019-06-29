@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using HtmlAgilityPack;
+using MoonSharp.Interpreter;
+
 
 public class LibImplTest : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        var doc = new HtmlAgilityPack.HtmlDocument();
-        var context = new NLua.Lua();
+        Script.RunString("print(1+1)");
 
         this.gameObject.SetActive(false);
     }

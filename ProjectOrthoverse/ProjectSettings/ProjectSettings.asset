@@ -580,7 +580,7 @@ PlayerSettings:
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
-  allowUnsafeCode: 0
+  allowUnsafeCode: 1
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 0
@@ -619,7 +619,7 @@ PlayerSettings:
       BlockedChatMessages: False
       Bluetooth: True
       Chat: False
-      CodeGeneration: False
+      CodeGeneration: True
       Contacts: False
       EnterpriseAuthentication: False
       HumanInterfaceDevice: False
