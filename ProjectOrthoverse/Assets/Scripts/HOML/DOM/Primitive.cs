@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Parser : MonoBehaviour
+public class Primitive : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
