@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class KeyControllWorld : MonoBehaviour
 {
-    public GameObject center;
-
     public Material defaultMat;
     public Material depthOnly;
     public GameObject cityData;
@@ -15,35 +13,35 @@ public class KeyControllWorld : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.localPosition += new Vector3(-0.1f, 0f, 0f);
+            transform.localPosition += new Vector3(-0.005f, 0f, 0f);
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.localPosition += new Vector3(0.1f, 0f, 0f);
+            transform.localPosition += new Vector3(0.005f, 0f, 0f);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.localPosition += new Vector3(0f, 0f, 0.1f);
+            transform.localPosition += new Vector3(0f, 0f, 0.005f);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.localPosition += new Vector3(0f, 0f, -0.1f);
+            transform.localPosition += new Vector3(0f, 0f, -0.005f);
         }
         if (Input.GetKey(KeyCode.U))
         {
-            transform.localPosition += new Vector3(0f, 0.1f, 0f);
+            transform.localPosition += new Vector3(0f, 0.005f, 0f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.localPosition += new Vector3(0f, -0.1f, 0f);
+            transform.localPosition += new Vector3(0f, -0.005f, 0f);
         }
         if (Input.GetKey(KeyCode.R))
         {
-            transform.RotateAround(center.transform.position, Vector3.up, 0.1f);
+            transform.Rotate(0f,0.05f,0f);
         }
         if (Input.GetKey(KeyCode.L))
         {
-            transform.RotateAround(center.transform.position, Vector3.up, -0.1f);
+            transform.Rotate(0f,-0.05f,0f);
         }
         if (Input.GetKeyDown(KeyCode.O))
         {

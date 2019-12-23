@@ -17,7 +17,7 @@ public class UVScroll : MonoBehaviour
     void Update()
     {
         mat.SetTextureOffset("_BaseMap", new Vector2(u, 0.0f));
-        u += 0.003f;
-        if (u > 1.0f) u = 0f;
+        u -= 0.003f;
+        if (u < -0.5f) u = 0.5f;
     }
 }
