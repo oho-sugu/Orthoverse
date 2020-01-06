@@ -13,13 +13,14 @@ public class Main : MonoBehaviour {
     {
         Homl.Parser.HomlParser parser = new Homl.Parser.HomlParser();
 
-        WWW www = new WWW("https://gist.githubusercontent.com/oho-sugu/3c5db150242e0381e08a5288e6b40af3/raw/4ceef5b9b287b69e47bf02ea76b342755f18ab4f/index.homl");
+        WWW www = new WWW("http://127.0.0.1:5000/");
         yield return www;
 
         Homl.DOM.Document doc = parser.Parse(www.text);
         doc.gameObject.transform.Translate(0.0f, 0.0f, 1.0f);
         www.Dispose();
 
+        /*
         www = new WWW("https://gist.githubusercontent.com/oho-sugu/4cdd98cbfc8e47be090d472e8cfe6392/raw/aa064cfcb3b847c9a4d7cf9b10f0416c010e5e2d/Graph");
         yield return www;
 
@@ -34,6 +35,6 @@ public class Main : MonoBehaviour {
         doc3.gameObject.transform.Translate(-0.5f, 0.0f, 1.0f);
         www.Dispose();
         
-
+        */
     }
 }
